@@ -75,6 +75,7 @@ namespace Zoombelievable {
                 HorizontalAlignment = HorizontalAlignment.Center,
                 VerticalAlignment = VerticalAlignment.Center
             };
+            RenderOptions.SetBitmapScalingMode(_image, BitmapScalingMode.NearestNeighbor);
             Child = _image;
             MouseWheel += OnMouseWheel;
             MouseLeftButtonDown += OnMouseLeftButtonDown;
